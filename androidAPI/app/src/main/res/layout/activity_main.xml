@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaime.androidapi.MainActivity">
+
+
+    <TextView
+        android:id="@+id/nombreCiudad"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sevilla"
+        app:layout_constraintBottom_toTopOf="@+id/estado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="12/02/2018"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nombreCiudad"
+        app:layout_constraintTop_toTopOf="@+id/nombreCiudad" />
+
+    <TextView
+        android:id="@+id/estado"
+        android:layout_width="174dp"
+        android:layout_height="25dp"
+        android:text="parcialmente nuboso"
+        app:layout_constraintStart_toStartOf="@+id/nombreCiudad"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <TextView
+        android:id="@+id/temperatura"
+        android:layout_width="180dp"
+        android:layout_height="159dp"
+        android:text="14ºC"
+        app:layout_constraintEnd_toEndOf="@+id/fecha"
+        app:layout_constraintTop_toBottomOf="@+id/fecha" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="174dp"
+        android:layout_height="135dp"
+        app:layout_constraintStart_toStartOf="@+id/estado"
+        app:layout_constraintTop_toBottomOf="@+id/estado"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/humedad"
+        android:layout_width="341dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="44dp"
+        android:text="20% de humedad ambiental"
+        app:layout_constraintEnd_toEndOf="@+id/temperatura"
+        app:layout_constraintStart_toStartOf="@+id/foto"
+        app:layout_constraintTop_toBottomOf="@+id/foto" />
+
+    <TextView
+        android:id="@+id/nubosidad"
+        android:layout_width="340dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="20% de nubes"
+        app:layout_constraintEnd_toEndOf="@+id/humedad"
+        app:layout_constraintStart_toStartOf="@+id/humedad"
+        app:layout_constraintTop_toBottomOf="@+id/humedad" />
+
+    <TextView
+        android:id="@+id/viento"
+        android:layout_width="339dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="10 km/h"
+        app:layout_constraintEnd_toEndOf="@+id/nubosidad"
+        app:layout_constraintStart_toStartOf="@+id/nubosidad"
+        app:layout_constraintTop_toBottomOf="@+id/nubosidad" />
+
+    <TextView
+        android:id="@+id/presion"
+        android:layout_width="337dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="presión atmosférica"
+        app:layout_constraintEnd_toEndOf="@+id/viento"
+        app:layout_constraintStart_toStartOf="@+id/viento"
+        app:layout_constraintTop_toBottomOf="@+id/viento" />
+
+    <TextView
+        android:id="@+id/precipitaciones"
+        android:layout_width="335dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="precipitaciones"
+        app:layout_constraintEnd_toEndOf="@+id/presion"
+        app:layout_constraintStart_toStartOf="@+id/presion"
+        app:layout_constraintTop_toBottomOf="@+id/presion" />
+
+</android.support.constraint.ConstraintLayout>
