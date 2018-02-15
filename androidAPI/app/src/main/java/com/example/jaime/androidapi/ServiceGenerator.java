@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceGenerator {
 
-    private static final String BASE_URL = "https://openweathermap.org/date/2.5/";
+    private static final String BASE_URL = "https://openweathermap.org";
 
     private static Retrofit.Builder builder =
             new Retrofit.Builder()

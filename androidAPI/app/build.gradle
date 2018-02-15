@@ -26,15 +26,17 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-<<<<<<< HEAD
+
     //Retrofit stuff
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-=======
+
     //REtrofit & Gson converter
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
     compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
->>>>>>> 0ebbac3e9d395796030a1156e4584af2d47170be
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
 }
