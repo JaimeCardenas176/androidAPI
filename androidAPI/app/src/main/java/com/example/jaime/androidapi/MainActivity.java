@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.jaime.androidapi.model.Weather.WeatherInfo;
+import com.squareup.picasso.Picasso;
 
 import java.util.Date;
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView viento;
     private TextView presion;
     private TextView precipitaciones;
-    //ae48797f317a02e51e943fa3961983c7
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,11 +55,11 @@ public class MainActivity extends AppCompatActivity {
                     fecha.setText(new Date().toString());
                     //estado.setText(response.body().getWeather().getDescription());
                     temperatura.setText(response.body().getMain().getTemp().toString());
-                    /*Picasso.with(this)
-                            .load(response.body().getWeather().getIcon());
+                    Picasso.with(getApplicationContext())
+                            .load(response.body().getWeather().get(0).getIcon())
                             .resize(50, 50)
                             .centerCrop()
-                            .into(img);*/
+                            .into(img);
                     Log.i("WENT GOOD",  response.body().toString());
                 }
             }
